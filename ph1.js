@@ -77,6 +77,9 @@ for (let button of buttons) {
                     grandTotalNumber = totalTakaNumber - (totalTakaNumber * (couple20DiscountNumber / 100));
                     document.getElementById('grand-total').innerText = grandTotalNumber;
                 }
+                else{
+                    alert('There is no coupon code like this!');
+                }
 
             })
 
