@@ -35,9 +35,9 @@
             <h3 class="text-center text-4xl font-bold">Best Offers For You</h3>
             <div class="grid grid-cols-2 gap-4">
 
-                <div id="news-15" class="new15 bg-yellow-500 grid grid-cols-7 rounded-3xl">
+                <div class=" bg-yellow-500 grid grid-cols-7 rounded-3xl">
                     <div class="col-span-4 my-auto">
-                        <h4 class="text-3xl font-bold text-center">15% OFF</h4>
+                        <h4 class="text-3xl font-bold text-center"><span id="new-15">15</span>% OFF</h4>
                         <p class="font-bold text-center">on your next purchase</p>
                         <p class="text-center">use by January 2024</p>
                     </div>
@@ -47,15 +47,15 @@
                         <p>Coupon Code</p>
                     </div>
                 </div>
-                <div id="news-15" class="new15 bg-pink-400 grid grid-cols-7 rounded-3xl">
+                <div class=" bg-pink-400 grid grid-cols-7 rounded-3xl">
                     <div class="col-span-4 my-auto">
-                        <h4 class="text-3xl font-bold text-center">20% OFF</h4>
+                        <h4 class="text-3xl font-bold text-center"><span id="couple-20">20</span>% OFF</h4>
                         <p class="font-bold text-center">on your next purchase</p>
                         <p class="text-center">use by January 2024</p>
                     </div>
                     <img src="images/cupon-devider.png" alt="">
                     <div class="col-span-2 my-auto ">
-                        <h4 id="news-15-text" class="text-3xl font-bold text-start">Couple 20</h4>
+                        <h4 id="couple-20-text" class="text-3xl font-bold text-start">Couple 20</h4>
                         <p>Coupon Code</p>
                     </div>
                 </div>
@@ -70,7 +70,7 @@
         <!--Best offer section  ends-->
 
         <!-- Seat Booking Start -->
-        <section class="container mx-auto">
+        <section class="container mx-auto my-10">
             <div class="text-center">
                 <button class="border-solid boder-[1px] bg-green-200 px-7 py-3 rounded-xl text-green-800 font-bold">
                     <span id="total-seat">40 </span> Seats Left</button>
@@ -84,15 +84,15 @@
 
             <div class="grid grid-cols-2">
                 <div class="mx-auto">
-                    <div>
-                        <button class="bg-gray-400 px-4 py-2 rounded selected-seat hover:bg-sky-700">A1</button>
-                        <button class="bg-gray-400 px-4 py-2 rounded selected-seat hover:bg-sky-700">A2</button>
-                        <button class="bg-gray-400 px-4 py-2 rounded selected-seat hover:bg-sky-700">A3</button>
-                        <button class="bg-gray-400 px-4 py-2 rounded selected-seat hover:bg-sky-700">A4</button>
+                    <div id="button-seat">
+                        <button class="bg-gray-400 px-4 py-2 rounded">A1</button>
+                        <button class="bg-gray-400 px-4 py-2 rounded">A2</button>
+                        <button class="bg-gray-400 px-4 py-2 rounded">A3</button>
+                        <button class="bg-gray-400 px-4 py-2 rounded">A4</button>
                     </div>
                 </div>
 
-                <div class="seat-price-part mx-auto bg-gray-100">
+                <div class="seat-price-part mx-auto bg-gray-100 px-4 py-3 rounded-lg">
                     <div>
                         <p class="font-bold">Seat<sup id="booked-seat" class="bg-green-700 px-2">0</sup></p>
                     </div>
@@ -107,12 +107,12 @@
                             <p>BDT <span id="total-taka">0.00</span></p>
                         </div>
                         <div id="apply-coupon">
-                            <input class="bg-slate-300" type="text">
+                            <input id="discount-input" class="bg-slate-300" type="text">
                         </div>
 
                         <div class="flex justify-between">
                             <p>Grand Total</p>
-                            <p>BDT <span>0.00</span></p>
+                            <p>BDT <span id="grand-total">0.00</span></p>
                         </div>
                         
                     </div>
@@ -132,6 +132,7 @@
     </footer>
 
     <script src="ph.js"></script>
+    <script src="ph1.js"></script>
 </body>
 
 </html>
